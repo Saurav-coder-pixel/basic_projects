@@ -24,7 +24,7 @@ import 'package:basic_projects/WallpaperApp/full_screen.dart';
         await http.get(Uri.parse('https://api.pexels.com/v1/curated?per_page=80'),
             headers: {
               'Authorization':
-              'sb90yd5ug6CVd0H2ZWybUL95TZa3ap8moW0UtgBntSr6ag3mNEgQ0l55'
+              'API_KEY'
             }).then((value){
               Map result= jsonDecode(value.body);
               setState(() {
